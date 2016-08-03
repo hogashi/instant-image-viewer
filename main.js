@@ -38,7 +38,7 @@ box.addEventListener('keydown', (e) => { // page jump
 	}
 	if(e.key == 'Enter') {
 		e.preventDefault();
-		num = doLimit(box.value);
+		num = doLimit(parseInt(box.value, 10));
 		setImage();
 		box.value = '';
 		box.style.setProperty('display', 'none');
