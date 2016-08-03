@@ -28,7 +28,7 @@ var setImage = () => {
 	htmltag.style.setProperty('height', '100%');
 	imgtag.style = 'display: block; height: 100%;';
 	setImage();
-})()
+})();
 
 box.addEventListener('keydown', (e) => { // page jump
 	if(e.key == 'Escape') { // cancel
