@@ -31,6 +31,11 @@ var setImage = () => {
 })()
 
 box.addEventListener('keydown', (e) => { // page jump
+	if(e.key == 'Escape') { // cancel
+		e.preventDefault();
+		box.value = '';
+		box.style.setProperty('display', 'none');
+	}
 	if(e.key == 'Enter') {
 		e.preventDefault();
 		num = doLimit(box.value);
