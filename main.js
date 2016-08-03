@@ -20,7 +20,7 @@ var doLimit = (v) => { // map
 };
 
 var setImage = () => {
-	imgtag.src = `allimgs_${num}.jpg`;
+	imgtag.src = `img_${num}.jpg`;
 	titletag.innerHTML = num;
 };
 
