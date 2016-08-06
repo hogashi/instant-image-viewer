@@ -10,8 +10,8 @@ imgtag = document.getElementsByTagName('img')[0];
 box = document.getElementsByTagName('textarea')[0];
 
 var doLimit = (v) => { // map
-	if(v < 1) {
-		return 1;
+	if(v < HEAD) {
+		return HEAD;
 	}
 	else if(v > TAIL) {
 		return TAIL;
